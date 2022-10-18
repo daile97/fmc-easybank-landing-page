@@ -24,9 +24,9 @@
 <body>
   <header>
     <div>
-      <img src="images/logo.svg" alt="easy bank logo" />
+      <a href="/"><img src="images/logo.svg" alt="easy bank logo" /></a>
     </div>
-    <nav id="header-nav">
+    <nav id="header-nav" class="toggled hidden">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -36,15 +36,16 @@
       </ul>
     </nav>
     <button class="request-btn">Request Invite</button>
-    <div id="close">
+    <div id="close" class='toggled hidden menu-btn'>
       <img src="images/icon-close.svg" alt="close icon" />
     </div>
-    <div id="hamburger">
+    <div id="hamburger" class='toggled menu-btn'>
       <img src="images/icon-hamburger.svg" alt="hamburger icon" />
     </div>
   </header>
 
   <main>
+    <div id="menu-bg" class="toggled hidden menu-btn"></div>
     <section class="hero">
       <div class="hero-image">
         <img src="images/image-mockups.png" />

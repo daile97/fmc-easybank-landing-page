@@ -32,6 +32,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid black;
 }
 
 header > button {
@@ -41,35 +42,14 @@ header > button {
 #header-nav {
   position: absolute;
   background-color: var(--white);
-  top: 140%;
-  left: 50%;
-  width: 88%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 1.2em;
-}
-
-#header-nav ul li {
-  padding: 0.65em;
-  cursor: pointer;
 }
 
 #header-nav a {
   color: var(--dark-blue);
 }
 
-#hamburger, #close {
+#hamburger {
   cursor: pointer;
-}
-
-#menu-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 99;
-  height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 20, 0.9), rgba(0, 0, 20, 0.1))
 }
 
 .hidden {
