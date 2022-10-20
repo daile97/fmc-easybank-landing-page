@@ -55,8 +55,9 @@ header > button {
   cursor: pointer;
 }
 
-#header-nav li:hover a::after {
-  width: 100%;
+
+#header-nav li:hover a {
+  opacity: 0.7;
 }
 
 #header-nav a {
@@ -102,6 +103,11 @@ header > button {
   font-size: 0.8rem;
   color: var(--white);
   cursor: pointer;
+}
+
+.request-btn:hover {
+  background: linear-gradient(to right, hsl(136, 65%, 61%),hsl(192, 70%, 61%)
+);
 }
 
 .hero-image {
@@ -304,6 +310,7 @@ footer p {
 @media (min-width: 992px) {
   header {
     justify-content: space-evenly;
+    padding: 0.6em 4.5em;
   }
   header .request-btn {
     display: block;
@@ -325,12 +332,26 @@ footer p {
   #header-nav ul li {
     padding: 0;
   }
+  #header-nav li:hover a::after {
+    width: 100%;
+  }
+  #header-nav a {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
   #hamburger {
     display: none;
+  }
+  .articles h2 {
+    text-align: left;
+    padding-left: 5.5em;
   }
   .articles-grid__container, .features-cards {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5em;
+  }
+  .articles-grid__container {
+    padding-inline: 6em;
   }
   .articles-grid__item img {
     height: 200px;
@@ -338,7 +359,7 @@ footer p {
   footer {
     flex-direction: row;
     justify-content: space-between;
-    padding-inline: 4em;
+    padding-inline: 10em;
     text-align: left;
   }
   #footer-nav {
@@ -359,7 +380,9 @@ footer p {
   #footer-nav ul li:nth-of-type(3) {
     grid-area: left3;
   }
-
+  footer > div:last-of-type {
+    text-align: right;
+  }
 
 }
 
@@ -367,11 +390,6 @@ footer p {
   .hero {
     flex-direction: row-reverse;
     align-items: center;
-  }
-
-  .hero-welcome {
-    margin-top: 0;
-    flex: 0.4;
   }
 
   .hero-image {
@@ -390,6 +408,8 @@ footer p {
     text-align: left;
     transform: translate(30%, -65%);
     padding: 0;
+    margin-top: 0;
+    flex: 0.4;
   }
 
   .hero-welcome h1 {
