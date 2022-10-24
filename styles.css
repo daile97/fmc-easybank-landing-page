@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
 :root {
   --dark-blue: hsl(233, 26%, 24%);
@@ -7,18 +7,21 @@
   --grayish-blue: hsl(233, 8%, 62%);
   --light-grayish-blue: hsl(220, 16%, 96%);
   --very-light-gray: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%)
+  --white: hsl(0, 0%, 100%);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   min-width: 100vw;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   color: var(--dark-blue);
 }
@@ -55,7 +58,6 @@ header > button {
   cursor: pointer;
 }
 
-
 #header-nav li:hover a {
   opacity: 0.7;
 }
@@ -76,7 +78,8 @@ header > button {
   transition: all 0.3s ease-in-out;
 }
 
-#hamburger, #close {
+#hamburger,
+#close {
   cursor: pointer;
 }
 
@@ -87,7 +90,11 @@ header > button {
   width: 100%;
   z-index: 99;
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 20, 0.9), rgba(0, 0, 20, 0.1))
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 20, 0.9),
+    rgba(0, 0, 20, 0.1)
+  );
 }
 
 .hidden {
@@ -106,8 +113,7 @@ header > button {
 }
 
 .request-btn:hover {
-  background: linear-gradient(to right, hsl(136, 65%, 61%),hsl(192, 70%, 61%)
-);
+  background: linear-gradient(to right, hsl(136, 65%, 61%), hsl(192, 70%, 61%));
 }
 
 .hero-image {
@@ -183,7 +189,7 @@ header > button {
   margin-top: 1em;
 }
 
-.features-card__thumb  {
+.features-card__thumb {
   margin-top: 0.9em;
 }
 
@@ -288,8 +294,9 @@ footer p {
 @media (min-width: 576px) {
   .hero-welcome {
     padding: 0 4em;
-  } 
-  .articles-grid__container, .features-cards {
+  }
+  .articles-grid__container,
+  .features-cards {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5em;
   }
@@ -346,7 +353,8 @@ footer p {
     text-align: left;
     padding-left: 5.5em;
   }
-  .articles-grid__container, .features-cards {
+  .articles-grid__container,
+  .features-cards {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5em;
   }
@@ -367,9 +375,10 @@ footer p {
   }
   #footer-nav ul {
     display: grid;
-    grid-template: "left1 ."
-                   "left2 ."
-                   "left3 ."
+    grid-template:
+      "left1 ."
+      "left2 ."
+      "left3 .";
   }
   #footer-nav ul li:nth-of-type(1) {
     grid-area: left1;
@@ -383,7 +392,6 @@ footer p {
   footer > div:last-of-type {
     text-align: right;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -426,6 +434,6 @@ footer p {
   .features {
     margin-top: -28%;
     text-align: left;
-    padding-inline: 9.5em
+    padding-inline: 9.5em;
   }
 }
